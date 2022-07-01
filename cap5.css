@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px; 
+    margin:0 auto;
+    padding:0 2%;
+}
+
+html,body {
+    height: 100%;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+}
+
+header {
+    height: 200px;
+    padding:20px 0;    
+}
+.logo {
+    width: 50%;
+}
+
+.menu{
+    padding-top: 30px;
+    width: 50%;
+    text-align: right;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+section.sobre {
+    height: calc(100% - 200px);
+    position: relative;  
+}
+
+.home {
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+    width: 1150px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.texto-sobre{
+    margin-top: 20px;
+}
+
+.texto-sobre{
+    font-size: 20px;
+}
+
+.texto-sobre button {
+   border: 0;
+   background-color: blue;
+   color: aliceblue;
+   border-radius: 10px;
+   width: 80px;
+   height: 30px;
+   cursor: pointer;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    color: blue;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+main .social-media{
+    display: flex;
+    align-content: center;
+}
+
+main .social-media a {
+    text-decoration: none;
+}
+
+main .social-media img{
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main .social-media a:first-child img {
+    margin-left: 0;
+}
+
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label{
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background-color: blue;
+    width: 500px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 0.5rem;
+    outline: none;
+    color: bisque;
+    font-size: 1rem;
+    border: 1px solid blue;
+    border-radius: 8px;
+}
+
+main form input[type="submit"]{
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background-color:rgb(106, 106, 204);
+    color: black;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: rgb(64, 64, 199);
+}
